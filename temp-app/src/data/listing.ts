@@ -106,61 +106,64 @@ Cook with ease—includes cookware, utensils & appliances for short or long stay
     },
   ],
   amenities: [
-    // Kitchen
-    { title: "Kitchen", icon: "COOKING", available: true, group: "Kitchen" },
-    { title: "Refrigerator", icon: "FRIDGE", available: true, group: "Kitchen" },
-    { title: "Microwave", icon: "MICROWAVE", available: true, group: "Kitchen" },
-    { title: "Cooking basics", icon: "COOKING_BASICS", available: true, group: "Kitchen" },
-    { title: "Dishes and silverware", icon: "DISHES", available: true, group: "Kitchen" },
-    { title: "Freezer", icon: "FREEZER", available: true, group: "Kitchen" },
-    { title: "Hot water kettle", icon: "KETTLE", available: true, group: "Kitchen" },
-    { title: "Rice maker", icon: "RICE", available: true, group: "Kitchen" },
     // Bathroom
-    { title: "Hot water", icon: "HOT_WATER", available: true, group: "Bathroom" },
-    { title: "Hair dryer", icon: "HAIR_DRYER", available: true, group: "Bathroom" },
+    { title: "Hairdryer", icon: "HAIR_DRYER", available: true, group: "Bathroom" },
     { title: "Cleaning products", icon: "CLEANING", available: true, group: "Bathroom" },
-    { title: "Body soap", icon: "SOAP", available: true, group: "Bathroom" },
     { title: "Shampoo", icon: "SHAMPOO", available: true, group: "Bathroom" },
-    { title: "Conditioner", icon: "CONDITIONER", available: true, group: "Bathroom" },
-    // Bedroom & laundry
-    { title: "Washer", icon: "WASHER", available: true, group: "Bedroom and laundry" },
-    { title: "Dryer", icon: "DRYER", available: true, group: "Bedroom and laundry" },
-    { title: "Essentials", icon: "ESSENTIALS", available: true, group: "Bedroom and laundry" },
+    { title: "Hot water", icon: "HOT_WATER", available: true, group: "Bathroom" },
+    { title: "Shower gel", icon: "SHOWER_GEL", available: true, group: "Bathroom" },
+
+    // Bedroom and laundry
+    { title: "Washing machine", icon: "WASHER", available: true, group: "Bedroom and laundry" },
     { title: "Hangers", icon: "HANGERS", available: true, group: "Bedroom and laundry" },
-    { title: "Bed linens", icon: "LINENS", available: true, group: "Bedroom and laundry" },
-    { title: "Extra pillows and blankets", icon: "PILLOWS", available: true, group: "Bedroom and laundry" },
+    { title: "Bed linen", icon: "LINENS", available: true, group: "Bedroom and laundry" },
+    { title: "Room-darkening blinds", icon: "BLINDS", available: true, group: "Bedroom and laundry" },
     { title: "Iron", icon: "IRON", available: true, group: "Bedroom and laundry" },
+    { title: "Clothes storage", icon: "WARDROBE", available: true, group: "Bedroom and laundry" },
+    { title: "Cot", icon: "COT", available: true, group: "Bedroom and laundry" },
+
     // Entertainment
     { title: "TV", icon: "TV", available: true, group: "Entertainment" },
+
     // Family
-    { title: "Crib", icon: "CRIB", available: false, group: "Family" },
-    { title: "High chair", icon: "HIGH_CHAIR", available: false, group: "Family" },
-    { title: "Children's books and toys", icon: "TOYS", available: false, group: "Family" },
-    // Heating & cooling
+    { title: "Cot", icon: "COT", available: true, group: "Family" },
+
+    // Heating and cooling
     { title: "Air conditioning", icon: "AC", available: true, group: "Heating and cooling" },
     { title: "Ceiling fan", icon: "FAN", available: true, group: "Heating and cooling" },
+
     // Home safety
-    { title: "Fire extinguisher", icon: "FIRE_EXTINGUISHER", available: true, group: "Home safety" },
-    { title: "First aid kit", icon: "FIRST_AID", available: true, group: "Home safety" },
+    { title: "Exterior security cameras on property", icon: "SURVEILLANCE", available: true, group: "Home safety" },
     { title: "Carbon monoxide alarm", icon: "CO_ALARM", available: false, group: "Home safety" },
     { title: "Smoke alarm", icon: "SMOKE_ALARM", available: false, group: "Home safety" },
-    // Internet & office
+    { title: "Fire extinguisher", icon: "FIRE_EXTINGUISHER", available: true, group: "Home safety" },
+    { title: "First aid kit", icon: "FIRST_AID", available: true, group: "Home safety" },
+
+    // Internet and office
     { title: "Wifi", icon: "WIFI", available: true, group: "Internet and office" },
     { title: "Dedicated workspace", icon: "WORKSPACE", available: true, group: "Internet and office" },
+
+    // Kitchen and dining
+    { title: "Kitchen", icon: "COOKING", available: true, group: "Kitchen and dining" },
+    { title: "Refrigerator", icon: "FRIDGE", available: true, group: "Kitchen and dining" },
+    { title: "Microwave", icon: "MICROWAVE", available: true, group: "Kitchen and dining" },
+    { title: "Cooking basics", icon: "COOKING_BASICS", available: true, group: "Kitchen and dining" },
+    { title: "Dishes and silverware", icon: "DISHES", available: true, group: "Kitchen and dining" },
+    { title: "Hot water kettle", icon: "KETTLE", available: true, group: "Kitchen and dining" },
+
     // Outdoor
     { title: "Pool", icon: "POOL", available: true, group: "Outdoor" },
     { title: "Hot tub", icon: "JACUZZI", available: true, group: "Outdoor" },
     { title: "Private patio or balcony", icon: "BALCONY", available: true, group: "Outdoor" },
-    // Parking & facilities
+
+    // Parking and facilities
     { title: "Free parking on premises", icon: "PARKING", available: true, group: "Parking and facilities" },
     { title: "Gym", icon: "GYM", available: true, group: "Parking and facilities" },
+
     // Services
-    { title: "Long-term stays allowed", icon: "LONGTERM", available: true, group: "Services" },
     { title: "Self check-in", icon: "LOCK_BOX", available: true, group: "Services" },
     { title: "Pets allowed", icon: "PETS", available: true, group: "Services" },
-    { title: "Luggage dropoff allowed", icon: "LUGGAGE", available: true, group: "Services" },
-    // Exterior
-    { title: "Exterior security cameras on property", icon: "SURVEILLANCE", available: true, group: "Home safety" },
+    { title: "Long-term stays allowed", icon: "LONGTERM", available: true, group: "Services" },
   ],
   // Shown on main page (top 10)
   topAmenities: [

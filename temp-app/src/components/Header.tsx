@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { AirbnbLogo, GlobeIcon, HamburgerMenuIcon } from "./Icons";
+import { GlobeIcon, HamburgerMenuIcon } from "./Icons";
 import styles from "./Header.module.css";
 
 export default function Header() {
@@ -10,10 +10,16 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        {/* Logo */}
+        {/* Local Airbnb Logo Image */}
         <a href="/" className={styles.logo} aria-label="Airbnb home">
-          <AirbnbLogo size={32} color="#FF385C" />
-          <span className={styles.logoText}>airbnb</span>
+          <Image
+            src="/logo.png"
+            alt="Airbnb"
+            width={150}
+            height={68}
+            priority
+            className={styles.logoImage}
+          />
         </a>
 
         {/* Center Search Pill matching screenshot 1 */}

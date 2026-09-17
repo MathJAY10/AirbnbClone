@@ -20,17 +20,15 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 4px;
   text-decoration: none;
-  color: #FF385C;
+  margin-left: 36px;
 }
 
-.logoText {
-  font-size: 21px;
-  font-weight: 800;
-  color: #FF385C;
-  letter-spacing: -0.8px;
-  margin-left: 2px;
+.logoImage {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 /* Center Search Pill matching frame 000.0s */
@@ -212,6 +210,12 @@
 @media (max-width: 744px) {
   .inner {
     padding: 0 20px;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .logoImage {
+    height: 52px;
   }
   .searchPill {
     display: none;
