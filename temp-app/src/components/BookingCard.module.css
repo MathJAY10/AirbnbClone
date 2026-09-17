@@ -1,0 +1,376 @@
+.sidebarWrapper {
+  position: sticky;
+  /* 80px StickyNav height + 8px breathing room */
+  top: 88px;
+  /* align-self:start is essential: the grid column (rightColumn) stretches
+     to the full left-column height (giving sticky its travel range), but the
+     aside itself must NOT stretch — only its natural card height. Without this,
+     sticky has no room to move because the container and element are the same height. */
+  align-self: start;
+  width: 100%;
+  max-width: 370px;
+  margin-left: auto;
+  z-index: 15;
+}
+
+/* Promo Banner Card */
+.promoCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.promoLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.promoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.promoText {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.promoLink {
+  color: #222222;
+  text-decoration: underline;
+  font-size: 13px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.claimBtn {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #222222;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.claimBtn:hover {
+  background: #eeeeee;
+  border-color: #222222;
+}
+
+.claimed {
+  background: #2e7d32;
+  color: #ffffff;
+  border-color: #2e7d32;
+}
+
+/* Main Card */
+.card {
+  background: #ffffff;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 24px;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222222;
+  text-decoration: underline;
+}
+
+.priceUnit {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 400;
+}
+
+/* Inputs Box */
+.inputsBorder {
+  position: relative;
+  border: 1px solid #b0b0b0;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background: #ffffff;
+}
+
+.datesRow {
+  display: flex;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.dateCell {
+  flex: 1;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.dateDivider {
+  width: 1px;
+  background: #b0b0b0;
+}
+
+.inputLabel {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 12px;
+  margin-bottom: 2px;
+}
+
+.inputValue {
+  font-size: 14px;
+  color: #222222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guestCell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.guestTextCol {
+  flex: 1;
+}
+
+.chevron {
+  color: #222222;
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* Guest Dropdown */
+.guestDropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 30;
+}
+
+.guestRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.guestRow:last-of-type {
+  border-bottom: none;
+}
+
+.guestType {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.guestDesc {
+  font-size: 12px;
+  color: #717171;
+  margin-top: 2px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.countBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #b0b0b0;
+  background: #ffffff;
+  color: #717171;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.countBtn:hover:not(:disabled) {
+  border-color: #222222;
+  color: #222222;
+}
+
+.countBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.countNum {
+  font-size: 15px;
+  font-weight: 400;
+  min-width: 18px;
+  text-align: center;
+}
+
+.closeGuestBtnRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.closeGuestBtn {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #222222;
+}
+
+/* Free Cancellation Pill */
+.cancellationPill {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.35;
+}
+
+/* Reserve Button */
+.reserveBtn {
+  width: 100%;
+  background: radial-gradient(circle, #FF385C 0%, #E00B41 50%, #D70466 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.reserveBtn:hover {
+  opacity: 0.93;
+}
+
+.notice {
+  text-align: center;
+  font-size: 13px;
+  color: #717171;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+/* Breakdown */
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.breakdownRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #222222;
+}
+
+.breakdownItem {
+  text-decoration: underline;
+  color: #222222;
+}
+
+.breakdownRowPromo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.promoNegative {
+  color: #2e7d32;
+}
+
+.breakdownDivider {
+  height: 1px;
+  background: #dddddd;
+  margin: 6px 0;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+/* Report */
+.reportWrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reportBtn {
+  background: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #717171;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.reportBtn:hover {
+  color: #222222;
+}

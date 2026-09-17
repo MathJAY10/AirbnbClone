@@ -1,0 +1,160 @@
+.footer {
+  background: #f7f7f7;
+  border-top: 1px solid #dddddd;
+  padding: 48px 80px 24px;
+  color: #222222;
+  font-size: 14px;
+}
+
+.breadcrumbRow {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #222222;
+}
+
+.breadcrumbs a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  color: #717171;
+  user-select: none;
+}
+
+.current {
+  color: #717171;
+}
+
+/* Links Grid */
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.colTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+.colList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colList a {
+  color: #222222;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.colList a:hover {
+  text-decoration: underline;
+}
+
+.bottomDivider {
+  height: 1px;
+  background: #dddddd;
+  margin-bottom: 24px;
+}
+
+/* Bottom Bar */
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+  color: #222222;
+}
+
+.legalLinks a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.legalLinks a:hover {
+  text-decoration: underline;
+}
+
+.dot {
+  color: #717171;
+}
+
+.settingsRow {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.settingBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+  cursor: pointer;
+}
+
+.settingBtn:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1128px) {
+  .footer {
+    padding: 32px 40px 80px;
+  }
+}
+
+@media (max-width: 744px) {
+  .footer {
+    padding: 24px 24px 96px;
+  }
+
+  .linksGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

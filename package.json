@@ -1,0 +1,11 @@
+{
+  "name": "airbnb-clone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix temp-app",
+    "build": "npm run build --prefix temp-app",
+    "start": "npm run start --prefix temp-app",
+    "lint": "npm run lint --prefix temp-app"
+  }
+}

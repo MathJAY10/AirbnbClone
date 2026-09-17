@@ -1,0 +1,67 @@
+.pageContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.mainContent {
+  flex: 1;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 24px 0;
+}
+
+/* Two-column layout for main details and sticky booking sidebar */
+.columnsLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 370px;
+  gap: 80px;
+  /* stretch: right column fills the same height as the (taller) left column,
+     which is exactly the boundary that position:sticky travels within. */
+  align-items: stretch;
+  margin-top: 32px;
+  padding-bottom: 48px;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.rightColumn {
+  /* No overflow, no height restriction — lets position:sticky
+     use the full column height (= left column height via stretch)
+     as the scroll boundary. */
+}
+
+/* Bottom full-width sections */
+.bottomSections {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1128px) {
+  .columnsLayout {
+    gap: 40px;
+    grid-template-columns: minmax(0, 1fr) 330px;
+  }
+}
+
+@media (max-width: 744px) {
+  .mainContent {
+    padding: 16px 16px 0;
+  }
+
+  .columnsLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .rightColumn {
+    display: none; /* Replaced by BottomReserveBar on mobile */
+  }
+}

@@ -1,0 +1,140 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #ffffff;
+  border-bottom: 1px solid #ebebeb;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  animation: slideDown 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.inner {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linksRow {
+  display: flex;
+  gap: 24px;
+  height: 80px;
+}
+
+.item {
+  background: none;
+  border: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+  cursor: pointer;
+  position: relative;
+  padding: 0 4px;
+  transition: color 0.15s ease;
+}
+
+.item:hover {
+  color: #000000;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #222222;
+}
+
+/* Right Reserve Widget matching frame 90s */
+.reserveWidget {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.priceLine {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.unit {
+  font-size: 14px;
+  color: #222222;
+}
+
+.ratingLine {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #222222;
+  font-weight: 600;
+}
+
+.star {
+  font-size: 10px;
+}
+
+.reviewsCount {
+  color: #717171;
+  font-weight: 400;
+}
+
+.reserveBtn {
+  background: radial-gradient(circle, #FF385C 0%, #E00B41 50%, #D70466 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.reserveBtn:hover {
+  opacity: 0.92;
+}
+
+@media (max-width: 744px) {
+  .nav {
+    display: none;
+  }
+}

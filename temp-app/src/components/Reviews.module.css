@@ -1,0 +1,311 @@
+.wrapper {
+  padding: 48px 0 24px;
+}
+
+.guestFavHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.heroRatingRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  line-height: 1;
+}
+
+.heroRatingNumber {
+  font-size: 96px;
+  font-weight: 800;
+  color: #222222;
+  letter-spacing: -3px;
+  line-height: 1;
+}
+
+.heroTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222222;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  letter-spacing: -0.2px;
+}
+
+.heroSubtitle {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 440px;
+  margin: 0 auto 16px;
+}
+
+.howReviewsWork {
+  font-size: 14.5px;
+  color: #222222;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  transition: opacity 0.15s ease;
+}
+
+.howReviewsWork:hover {
+  opacity: 0.8;
+}
+
+/* 7 Columns Metrics Grid matching frame 111.0s */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 36px;
+  margin-bottom: 28px;
+}
+
+.metricCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid #ebebeb;
+  padding-left: 16px;
+}
+
+.metricCol:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.metricLabel {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.metricScore {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 12px;
+}
+
+.metricIcon {
+  color: #222222;
+  margin-top: auto;
+}
+
+/* Overall rating bars */
+.barList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.barItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #717171;
+}
+
+.barNum {
+  min-width: 8px;
+}
+
+.barTrack {
+  flex: 1;
+  height: 4px;
+  background: #ebebeb;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: #222222;
+  border-radius: 2px;
+}
+
+/* Tag Pills Row */
+.tagPillsRow {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  scrollbar-width: none;
+}
+
+.tagPillsRow::-webkit-scrollbar {
+  display: none;
+}
+
+.tagPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #dddddd;
+  border-radius: 24px;
+  padding: 8px 14px;
+  font-size: 14px;
+  color: #222222;
+  white-space: nowrap;
+  background: #ffffff;
+}
+
+.tagLabel {
+  font-weight: 500;
+}
+
+.tagCount {
+  color: #717171;
+  font-size: 13px;
+}
+
+/* Reviews Grid (2 columns) */
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 64px;
+  margin-bottom: 32px;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.authorMeta {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.authorTenure {
+  font-size: 14px;
+  color: #717171;
+}
+
+.reviewRatingRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.reviewStars {
+  font-size: 10px;
+  color: #222222;
+  letter-spacing: 1px;
+}
+
+.dot {
+  color: #717171;
+}
+
+.reviewDate {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.comment {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.showMoreBtn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #222222;
+  align-self: flex-start;
+  padding: 0;
+}
+
+/* Show all reviews button matching frame 115.5s */
+.showAllReviewsBtn {
+  background: #ffffff;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  padding: 13px 23px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.15s ease;
+}
+
+.showAllReviewsBtn:hover {
+  background: #f7f7f7;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ebebeb;
+  margin-top: 48px;
+}
+
+@media (max-width: 950px) {
+  .metricsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 744px) {
+  .metricsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroRatingNumber {
+    font-size: 64px;
+  }
+  .heroRatingRow {
+    gap: 10px;
+  }
+}

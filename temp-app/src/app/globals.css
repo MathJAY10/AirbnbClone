@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Circular+Pro:wght@300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Airbnb Colors */
+  --color-rausch: #FF385C;
+  --color-rausch-dark: #E31C5F;
+  --color-babu: #00A699;
+  --color-arches: #FC642D;
+  --color-hof: #484848;
+  --color-foggy: #767676;
+  --color-white: #FFFFFF;
+  --color-gray-light: #F7F7F7;
+  --color-gray-border: #DDDDDD;
+  --color-gray-text: #717171;
+  --color-black: #222222;
+  
+  /* Airbnb Typography - uses Circular font */
+  --font-family: 'Circular', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+  
+  /* Spacing */
+  --header-height: 80px;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-black);
+  background: var(--color-white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

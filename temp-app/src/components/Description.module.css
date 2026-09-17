@@ -1,0 +1,44 @@
+.wrapper {
+  padding: 24px 0;
+}
+
+.text {
+  font-size: 16px;
+  color: #222;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.expanded {
+  /* show all */
+}
+
+.showMore {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  padding: 12px 0 0;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+
+.showMore:hover {
+  color: #717171;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ebebeb;
+  margin-top: 24px;
+}
